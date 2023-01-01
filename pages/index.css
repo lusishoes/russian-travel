@@ -8,7 +8,8 @@
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;  
+    -moz-text-size-adjust: 100%;
+    max-width: 1280px;  
 }
 
 .header {
@@ -17,6 +18,7 @@
     margin-top: 28px;
     padding: 0 48px;
     justify-content: space-between;
+    margin-bottom: 56px;
 }
 
 .header__logo {
@@ -48,20 +50,23 @@
 
 .lead {
     max-width: 984px;
+    width: 76.875%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    border: 1px solid red;
 }
 
 .lead__title {
     margin: 0;
-    margin-top: 56px;
+    margin-bottom: 32px;
     text-align: center;
     font-style: normal;
     font-size: 6rem;
     line-height: 6.25rem;
     color: #FFFFFF;
     font-weight: 900;
+    border: 1px solid red;
 }
 
 .lead__subtitle {
@@ -70,18 +75,19 @@
     line-height: 2rem;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 32px;
-    font-weight: 400
+    font-weight: 400;
+    margin-bottom: 64px;
+
 }
 
 .lead__image {
-    margin-top: 64px;
-    width: 984px;
+    width: 100%;
     height: 615px;
     margin-bottom: 8px;
     background-image: url('../images/lead-polka.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border: 1px solid red;
 }
 
 .lead__caption {
@@ -93,13 +99,16 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #FFFFFF;
+    border: 1px solid red;
 }
 
 .intro {
     max-width: 984px;
+    width: 76.875%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    border: 1px solid red;
 }
 
 .intro__title {
@@ -112,6 +121,7 @@
     line-height: 3.625rem;
     color: #FFFFFF;
     max-width: 690px;
+    border: 1px solid red;
 }
 
 .intro__text {
@@ -122,12 +132,14 @@
     color: #FFFFFF;
     max-width: 690px;
     margin: 0;
+    border: 1px solid red;
+    margin-bottom: 33px;
 }
 
 .intro_lists {
     padding-left: 0;
-    margin-top: 33px;
     margin-bottom: 0;
+    border: 1px solid red;
 }
 
 .intro__list {
@@ -138,6 +150,7 @@
     font-size: 0.75rem;
     line-height: 1.5;
     color: #FFFFFF;
+    border: 1px solid red;
 }
 
 .intro__list-num {
@@ -153,19 +166,27 @@
 }
 
 .grid__item {
-    width: 284px;
-    height: 213px;
+    width: 100%;
+    height: auto;
+}
+
+.places {
+    display: grid;
+    width: 76.875%;
+    grid-template-columns: 100%;
+    row-gap: 80px;
+    margin: auto;
+    border: 1px solid red;
 }
 
 .places_place {
     max-width: 984px;
-    margin: 0 auto;
-    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 460px 484px;
     grid-template-rows: fit-content(152px) 460px;
     column-gap: 40px;
     row-gap: 48px;
+    border: 1px solid red;
 }
 
 .places_place:last-child {
@@ -194,11 +215,13 @@
 .place__image {
     width: 100%;
     height: 100%;
+    border: 1px solid red;
 }
 
 .place__website {
     max-width: 456px;
     position: relative;
+    border: 1px solid red;
 }
 
 .place__url-heading {
@@ -240,6 +263,7 @@
     line-height: 163%;
     margin-bottom: 26px;
     color: #FFFFFF;
+    border: 1px solid red;
 }
 
 .place__paragraph:nth-child(2) {
@@ -263,9 +287,13 @@
 
 .cover__overlay {
     display: block;
-    padding: 245px 312px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.3);
+    min-height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cover__overlay:hover {
@@ -273,30 +301,34 @@
 }
 
 .cover__title {
-    margin: 0 0 32px;
+    margin: 0 auto 32px;
     font-style: normal;
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 4.75rem;
     text-align: center;
     color: #FFFFFF;
+    max-width: 560px;
+    
 }
 
 .cover__subtitle {
-    margin: 0;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.375rem;
     text-align: center;
     color: #FFFFFF;
+    max-width: 360px;
 }
 
 .footer {
     margin: 0 48px 24px;
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__link {
@@ -315,9 +347,6 @@
 
 .footer__copyright {
     margin: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -326,9 +355,13 @@
 }
 
 
-@media screen and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page {
+        max-width: 1024px
+    }
+
     .cover__overlay {
-        padding: 195px 232px;
+        min-height: 640px;
     }
 
     .cover {
@@ -336,29 +369,28 @@
         height: 640px;
     }
 
-    .page {
-        max-width: 1279px
-    }
-
-    .photo-grid {
-        grid-gap: 14px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 300px 300px 300px;
-        margin: 92px 48px;
-        justify-content: center;
-    }
-    
-    .grid__item {
-        width: 300px;
-        height: 225px;
+    .places {
+        width: 90.625%;
     }
 
     .places_place {
         column-gap: 32px;
-        grid-template-columns: 440px 456px;
-        max-width: 928px;
+        grid-template-columns: 440px fit-content(456px);
         grid-template-rows: fit-content(152px) 440px;
     }
+
+    .photo-grid {
+        grid-gap: 14px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 92px auto;
+    }
+    
+    .grid__item {
+        width: 100%;
+        height: auto;
+    }
+
+
 
     .place__images { 
         width: 440px;
@@ -366,27 +398,35 @@
     }
 
     .lead__image {
-        width: 928px;
+        width: 100%;
         height: 580px;
         margin-top: 56px;
     }
 
-    .lead__title {
-        margin-top: 48px;
+    .header {
+        margin-bottom: 48px;
     }
 
     .lead {
         max-width: 928px;
         margin-left: auto;
         margin-right: auto;
+        width: 90.625%;
     }
 
     .intro {
         max-width: 928px;
+        width: 90.625%;
     }
 }
 
-/*********************Свойства для другого размера*****************************/
+
+
+
+
+
+
+/*********************Свойства для другого размера****************************
 @media screen and (max-width: 1023px) {
     .page {
         max-width: 768px
@@ -471,13 +511,13 @@
 }
 
 
-/*********************Свойства для другого размера*****************************/
+********************Свойства для другого размера***********************
 @media screen and (min-width: 425px) and (max-width: 767px) {
     
 }
 
 
-/*********************Свойства для другого размера*****************************/
+*******************Свойства для другого размера*************************
 @media screen and (max-width: 424px ){
     
 }
