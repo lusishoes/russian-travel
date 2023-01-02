@@ -182,8 +182,8 @@
 .places_place {
     max-width: 984px;
     display: grid;
-    grid-template-columns: 460px 484px;
-    grid-template-rows: fit-content(152px) 460px;
+    grid-template-columns: 460px fit-content(484px);
+    /* grid-template-rows: fit-content(152px) 460px; */
     column-gap: 40px;
     row-gap: 48px;
     border: 1px solid red;
@@ -219,20 +219,24 @@
 }
 
 .place__website {
-    max-width: 456px;
-    position: relative;
+    max-width: 100%;
+    /* position: relative; */
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .place__url-heading {
     margin: 0;
+    margin-bottom: 12px;
     font-style: normal;
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 1;
-    position: absolute;
-    bottom: 34px;
-    left: 0;
+    /* position: absolute; */
+    /* bottom: 34px; */
+    /* left: 0; */
     letter-spacing: 2px;
     color: #AAAAAA;
 }
@@ -243,9 +247,9 @@
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.375rem;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; */
     text-decoration-line: underline;
     color: #FFFFFF;
 }
@@ -345,6 +349,10 @@
     opacity: 0.8;
 }
 
+.footer__link:last-child {
+    margin-right: 0;
+}
+
 .footer__copyright {
     margin: 0;
     font-style: normal;
@@ -376,7 +384,6 @@
     .places_place {
         column-gap: 32px;
         grid-template-columns: 440px fit-content(456px);
-        grid-template-rows: fit-content(152px) 440px;
     }
 
     .photo-grid {
@@ -389,8 +396,6 @@
         width: 100%;
         height: auto;
     }
-
-
 
     .place__images { 
         width: 440px;
@@ -420,14 +425,7 @@
     }
 }
 
-
-
-
-
-
-
-/*********************Свойства для другого размера****************************
-@media screen and (max-width: 1023px) {
+@media (min-width: 425px) and (max-width: 767px) {
     .page {
         max-width: 768px
     }
@@ -436,8 +434,11 @@
         padding: 0 24px;
     }
 
+    .lead {
+        width: 100%;
+    }
+
     .lead__image {
-        width: 768px;
         height: 480px;
     }
 
@@ -446,7 +447,7 @@
     }
 
     .intro {
-        max-width: 720px;
+        width: 93.75%;
     }
 
     .intro__title {
@@ -455,22 +456,17 @@
 
     .photo-grid {
         grid-gap: 16px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 352px 352px;
-        margin: 88px 24px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+        margin: 88px auto;
     }
-    
-    .grid__item {
-        width: 352px;
-        height: 264px;
+
+    .places {
+        width: 93.75%;
     }
 
     .places_place {
-        max-width: 720px;
-        margin: 0 auto;
-        margin-bottom: 73px;
-        grid-template-columns: 340px 352px;
-        grid-template-rows: fit-content(152px) fit-content(440px);
+        grid-template-columns: 340px fit-content(352px);
         column-gap: 28px;
     }
 
@@ -480,19 +476,40 @@
     }
 
     .place__title {
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 46px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .place__paragraph {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .place__paragraph:last-child {
+        margin-bottom: 0;
     }
 
     .place__url-heading {
         line-height: 12px;
     }
 
-    .place__paragraph{
-        font-size: 16px;
-        margin-bottom: 25px;
+    .cover__overlay {
+        min-height: 480px;
     }
+
+    .cover {
+        max-width: 768px;
+        height: 480px;
+    }
+
+    .footer {
+        margin: 0 24px 24px;
+    } 
+/* 
+    .place__url-heading {
+        line-height: 12px;
+    }
+
 
     .cover__overlay {
         padding: 115px 104px;
@@ -507,9 +524,10 @@
 
     .footer {
         margin: 0 24px 24px;
-    }    
+    }     */
 }
 
+/**
 
 ********************Свойства для другого размера***********************
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -586,7 +604,6 @@
     }
 
     .photo-grid {
-
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 288px;
         margin: 64px auto;
