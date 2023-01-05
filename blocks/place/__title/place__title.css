@@ -6,3 +6,25 @@
     line-height: 1.06;
     color: #FFFFFF;
 }
+
+@media (min-width: 690px) and (max-width: 768px) {
+    .place__title {
+        font-size: 42px;
+        line-height: 1.09;
+    }
+}
+
+@media (max-width: 690px) {
+    .place__title {
+        max-width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .place__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+}

@@ -9,3 +9,10 @@
     border: 1px solid red;
     margin-bottom: 33px;
 }
+
+@media (max-width: 425px) {
+    .intro__text {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

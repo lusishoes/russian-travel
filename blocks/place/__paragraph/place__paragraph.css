@@ -20,3 +20,26 @@
 .place__paragraph-last-element {
     margin-bottom: 0;
 }
+
+@media (min-width: 690px) and (max-width: 768px) {
+    .place__paragraph {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .place__paragraph:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .place__paragraph {
+        max-width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .place__paragraph:last-child {
+        margin-bottom: 0;
+    }
+}

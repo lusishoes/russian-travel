@@ -6,3 +6,21 @@
     margin: auto;
     border: 1px solid red;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .places {
+        width: 90.625%;
+    }
+}
+
+@media (min-width: 690px) and (max-width: 768px) {
+    .places {
+        width: 93.75%;
+    }
+}
+
+@media (max-width: 690px) {
+    .places {
+        width: 100%;
+    }
+}

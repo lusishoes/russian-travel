@@ -8,3 +8,10 @@
     color: #FFFFFF;
     max-width: 360px;
 }
+
+@media (max-width: 425px) {
+    .cover__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
