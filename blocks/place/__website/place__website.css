@@ -1,6 +1,5 @@
 .place__website {
     max-width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: end;

@@ -7,7 +7,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #FFFFFF;
-    border: 1px solid red;
+    
 }
 
 @media (min-width: 425px) and (max-width: 768px) {

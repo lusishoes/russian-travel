@@ -1,7 +1,7 @@
 .intro__lists {
     padding-left: 0;
     margin-bottom: 0;
-    border: 1px solid red;
+  
 }
 
 @media (max-width: 425px) {

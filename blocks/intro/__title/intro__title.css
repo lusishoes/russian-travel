@@ -8,7 +8,7 @@
     line-height: 1.07;
     color: #FFFFFF;
     max-width: 690px;
-    border: 1px solid red;
+    
 }
 
 @media (min-width: 425px) and (max-width: 768px) {

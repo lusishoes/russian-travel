@@ -4,7 +4,7 @@
     grid-template-columns: 460px fit-content(484px);
      column-gap: 40px; 
     row-gap: 48px; 
-    border: 1px solid red;
+    
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

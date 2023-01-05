@@ -1,0 +1,9 @@
+.place__paragraphs {
+    max-width: 484px;
+}
+
+@media (max-width: 690px) {
+    .place__paragraphs {
+        max-width: 100%;
+    }
+}
