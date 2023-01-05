@@ -1,0 +1,16 @@
+.cover__overlay {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.5s; 
+}
+
+.cover__overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
