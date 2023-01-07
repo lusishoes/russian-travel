@@ -2,10 +2,6 @@
     width: 100%;
     height: 615px;
     margin-bottom: 8px;
-    background-image: url('../../../images/lead-polka.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -17,7 +13,7 @@
 
 @media (min-width: 425px) and (max-width: 768px) {
     .lead__image {
-        height: 480px;
+        height: auto;
     }
 }
 

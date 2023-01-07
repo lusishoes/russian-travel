@@ -12,15 +12,17 @@
     opacity: 0.8;
 }
 
-.footer__link:last-child {
-    margin-right: 0;
-    margin-bottom: 48px;
-}
+
 
 @media (max-width: 690px) {
     .footer__link {
         font-size: 24px;
         line-height: 1;
         margin-bottom: 32px;
+    }
+
+    .footer__link:last-child {
+        margin-right: 0;
+        margin-bottom: 48px;
     }
 }

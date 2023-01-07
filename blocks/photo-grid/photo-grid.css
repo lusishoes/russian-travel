@@ -21,6 +21,7 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr 1fr;
         margin: 88px auto;
+        max-width: calc(100% - 48px);
     }
 }
 

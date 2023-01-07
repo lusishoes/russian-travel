@@ -1,4 +1,4 @@
-.page {
+.root {
     font-family: 'Inter', sans-serif;
     margin: 0 auto;
     background-color: #2A2C2F;
@@ -10,13 +10,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .page {
+    .root {
         max-width: 1024px;
     }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
-    .page {
+    .root {
         max-width: 768px;
     }
 }

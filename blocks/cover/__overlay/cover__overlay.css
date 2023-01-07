@@ -1,6 +1,6 @@
 .cover__overlay {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(42, 44, 47, 0.3);
     min-height: 740px;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 }
 
 .cover__overlay:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(42, 44, 47, 0.8);
     
 }
 

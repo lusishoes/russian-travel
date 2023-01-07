@@ -33,6 +33,7 @@
         max-width: calc(100% - 32px);
         margin-left: 16px;
         margin-right: 16px;
+        font-size: 16px;
     }
 
     .place__paragraph:last-child {

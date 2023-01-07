@@ -15,11 +15,13 @@
 @media (min-width: 690px) and (max-width: 768px) {
     .places {
         width: 93.75%;
+        row-gap: 73px;
     }
 }
 
 @media (max-width: 690px) {
     .places {
         width: 100%;
+        row-gap: 50px;
     }
 }
