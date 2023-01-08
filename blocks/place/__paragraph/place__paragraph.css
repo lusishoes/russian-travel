@@ -8,12 +8,7 @@
     color: #FFFFFF;
 }
 
-.place__paragraph:nth-child(2) {
-    margin-bottom: 0;
-    align-self: stretch;
-}
-
-.place__paragraph-last-element {
+.place__paragraph:last-child {
     margin-bottom: 0;
 }
 
